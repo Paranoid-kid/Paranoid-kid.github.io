@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -91,12 +91,13 @@
 
 
 <meta name="description" content="Python - 生成器、循环对象1. 生成器生成器(generator)的主要目的是构成一个用户自定义的循环对象。 生成器的编写方法和函数定义类似，只是在return的地方改为yield。生成器中可以有多个yield。当生成器遇到一个yield时，会暂停运行生成器，返回yield后面的值。当再次调用生成器的时候，会从刚才暂停的地方继续运行，直到下一个yield。生成器自身又构成一个循环器，每次循">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python - 生成器、循环对象">
 <meta property="og:url" content="http://yoursite.com/2017/05/13/Python-生成器、循环对象/index.html">
 <meta property="og:site_name" content="Valar Morghulis">
 <meta property="og:description" content="Python - 生成器、循环对象1. 生成器生成器(generator)的主要目的是构成一个用户自定义的循环对象。 生成器的编写方法和函数定义类似，只是在return的地方改为yield。生成器中可以有多个yield。当生成器遇到一个yield时，会暂停运行生成器，返回yield后面的值。当再次调用生成器的时候，会从刚才暂停的地方继续运行，直到下一个yield。生成器自身又构成一个循环器，每次循">
-<meta property="og:updated_time" content="2017-05-13T10:57:02.715Z">
+<meta property="og:updated_time" content="2017-05-13T17:20:45.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python - 生成器、循环对象">
 <meta name="twitter:description" content="Python - 生成器、循环对象1. 生成器生成器(generator)的主要目的是构成一个用户自定义的循环对象。 生成器的编写方法和函数定义类似，只是在return的地方改为yield。生成器中可以有多个yield。当生成器遇到一个yield时，会暂停运行生成器，返回yield后面的值。当再次调用生成器的时候，会从刚才暂停的地方继续运行，直到下一个yield。生成器自身又构成一个循环器，每次循">
@@ -204,6 +205,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -292,6 +303,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -327,10 +360,7 @@
 <p>假设我们有一个test.txt的文件:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1234</div><div class="line">abcd</div><div class="line">efg</div></pre></td></tr></table></figure>
 <p>我们运行一下python命令行：</p>
-<p>>&gt;&gt;f = open(‘test.txt’)</p>
-<p>>&gt;&gt;f.next()</p>
-<p>>&gt;&gt;f.next()</p>
-<p>…</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;f = open(<span class="string">'test.txt'</span>)</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">...</div></pre></td></tr></table></figure>
 <p>不断输入f.next()，直到最后出现StopIteration</p>
 <p>open()返回的实际上是一个循环对象，包含有next()方法。而该next()方法每次返回的就是新的一行的内容，到达文件结尾时举出StopIteration。这样，我们相当于手工进行了循环。</p>
 <p>自动进行的话，就是：</p>
@@ -370,6 +400,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
       
 
       
@@ -467,15 +503,24 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 

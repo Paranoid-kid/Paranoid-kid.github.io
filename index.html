@@ -202,6 +202,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -292,6 +302,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -331,7 +363,7 @@
 <h2 id="3-filter-函数"><a href="#3-filter-函数" class="headerlink" title="3. filter() 函数"></a>3. filter() 函数</h2><p>如果函数对象返回的是True，则该次的元素被储存于返回的表中。filter通过读入的函数来筛选数据。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(a)</span>:</span></div><div class="line">    <span class="keyword">if</span> a &gt; <span class="number">100</span>:</div><div class="line">        <span class="keyword">return</span> <span class="keyword">True</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">return</span> <span class="keyword">False</span></div><div class="line"></div><div class="line"><span class="keyword">print</span> filter(func,[<span class="number">10</span>,<span class="number">56</span>,<span class="number">101</span>,<span class="number">500</span>])</div></pre></td></tr></table></figure>
 <p>同样，在Python 3.X中，filter返回的不是表，而是循环对象。</p>
-<h2 id="4-reduce-函数"><a href="#4-reduce-函数" class="headerlink" title="4. reduce()函数"></a>4. reduce()函数</h2><p>reduce可以累进地将函数作用于各个参数，前提是就是这个函数自身能接收两个参数。</p>
+<h2 id="4-reduce-函数"><a href="#4-reduce-函数" class="headerlink" title="4. reduce() 函数"></a>4. reduce() 函数</h2><p>reduce可以累进地将函数作用于各个参数，前提是就是这个函数自身能接收两个参数。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">print</span> reduce((<span class="keyword">lambda</span> x,y: x+y),[<span class="number">1</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">7</span>,<span class="number">9</span>])</div></pre></td></tr></table></figure>
 <p>相当于(((1+2)+5)+7)+9 = 24</p>
 <ul>
@@ -422,6 +454,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -459,10 +513,7 @@
 <p>假设我们有一个test.txt的文件:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1234</div><div class="line">abcd</div><div class="line">efg</div></pre></td></tr></table></figure>
 <p>我们运行一下python命令行：</p>
-<p>>&gt;&gt;f = open(‘test.txt’)</p>
-<p>>&gt;&gt;f.next()</p>
-<p>>&gt;&gt;f.next()</p>
-<p>…</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;f = open(<span class="string">'test.txt'</span>)</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">...</div></pre></td></tr></table></figure>
 <p>不断输入f.next()，直到最后出现StopIteration</p>
 <p>open()返回的实际上是一个循环对象，包含有next()方法。而该next()方法每次返回的就是新的一行的内容，到达文件结尾时举出StopIteration。这样，我们相当于手工进行了循环。</p>
 <p>自动进行的话，就是：</p>
@@ -562,15 +613,24 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
           
             
             
             <div class="site-state-item site-state-tags">
-              
+              <a href="/tags/index.html">
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
-              
+              </a>
             </div>
           
 
