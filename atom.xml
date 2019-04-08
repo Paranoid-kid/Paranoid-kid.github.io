@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-03T12:56:05.134Z</updated>
+  <updated>2019-04-08T13:07:56.542Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ARTS-Week-03</title>
+    <link href="http://yoursite.com/2019/04/08/ARTS-Week-03/"/>
+    <id>http://yoursite.com/2019/04/08/ARTS-Week-03/</id>
+    <published>2019-04-08T13:07:05.000Z</published>
+    <updated>2019-04-08T13:07:56.542Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p></blockquote><h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Palindrome-Number"><a href="#Palindrome-Number" class="headerlink" title="Palindrome Number"></a>Palindrome Number</h3><p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p><p><strong>Example 1:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: 121</div><div class="line">Output: true</div></pre></td></tr></table></figure><p><strong>Example 2:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: -121</div><div class="line">Output: false</div><div class="line">Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.</div></pre></td></tr></table></figure><p><strong>Example 3:</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: 10</div><div class="line">Output: false</div><div class="line">Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</div></pre></td></tr></table></figure><p><strong>Code</strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isPalindrome</span><span class="params">(self, x)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type x: int</div><div class="line">        :rtype: bool</div><div class="line">        """</div><div class="line">        <span class="comment"># 先转为String然后反转比较</span></div><div class="line">        <span class="keyword">return</span> <span class="keyword">False</span> <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">else</span> str(x) == str(x)[::<span class="number">-1</span>]</div></pre></td></tr></table></figure><h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote><p>可以翻译，锻炼自己的阅读和英语能力。</p><p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p></blockquote><h3 id="Using-Machine-Learning-to-Detect-Malicious-URLs"><a href="#Using-Machine-Learning-to-Detect-Malicious-URLs" class="headerlink" title="Using Machine Learning to Detect Malicious URLs"></a>Using Machine Learning to Detect Malicious URLs</h3><p><a href="http://web.archive.org/web/20170514093208/http://fsecurify.com/using-machine-learning-detect-malicious-urls/" target="_blank" rel="external">http://web.archive.org/web/20170514093208/http://fsecurify.com/using-machine-learning-detect-malicious-urls/</a></p><h3 id="原创翻译-使用机器学习方法检测恶意URL"><a href="#原创翻译-使用机器学习方法检测恶意URL" class="headerlink" title="[原创翻译] 使用机器学习方法检测恶意URL"></a>[原创翻译] 使用机器学习方法检测恶意URL</h3><p><a href="https://www.t00ls.net/thread-50650-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50650-1-1.html</a></p><h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote><p>生活技巧，学习技巧、工具</p></blockquote><h3 id="使用Markdown排版微信公众号文章"><a href="#使用Markdown排版微信公众号文章" class="headerlink" title="使用Markdown排版微信公众号文章"></a>使用Markdown排版微信公众号文章</h3><p>wechat-format可转化 Markdown 到给微信特制的 HTML</p><p>项目地址：</p><p><a href="https://github.com/lyricat/wechat-format" target="_blank" rel="external">https://github.com/lyricat/wechat-format</a></p><h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="原创翻译-使用机器学习方法检测恶意URL-1"><a href="#原创翻译-使用机器学习方法检测恶意URL-1" class="headerlink" title="[原创翻译] 使用机器学习方法检测恶意URL"></a>[原创翻译] 使用机器学习方法检测恶意URL</h3><p><a href="https://www.t00ls.net/thread-50650-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50650-1-1.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）&lt;/p&gt;
+&lt;/b
+      
+    
+    </summary>
+    
+      <category term="ARTS" scheme="http://yoursite.com/categories/ARTS/"/>
+    
+    
+      <category term="ARTS" scheme="http://yoursite.com/tags/ARTS/"/>
+    
+  </entry>
   
   <entry>
     <title>ARTS-Week-02</title>
