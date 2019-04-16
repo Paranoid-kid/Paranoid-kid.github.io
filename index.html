@@ -293,6 +293,187 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/ARTS-Week-04/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Valar Morghulis">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/16/ARTS-Week-04/" itemprop="url">ARTS-Week-04</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T17:37:50+08:00">
+                2019-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ARTS/" itemprop="url" rel="index">
+                    <span itemprop="name">ARTS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+          
+
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
+</blockquote>
+<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Roman-to-Integer"><a href="#Roman-to-Integer" class="headerlink" title="Roman to Integer"></a>Roman to Integer</h3><p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Symbol       Value</div><div class="line">I             1</div><div class="line">V             5</div><div class="line">X             10</div><div class="line">L             50</div><div class="line">C             100</div><div class="line">D             500</div><div class="line">M             1000</div></pre></td></tr></table></figure>
+<p>For example, two is written as <code>II</code> in Roman numeral, just two one’s added together. Twelve is written as, <code>XII</code>, which is simply <code>X</code> + <code>II</code>. The number twenty seven is written as <code>XXVII</code>, which is <code>XX</code> + <code>V</code> + <code>II</code>.</p>
+<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
+<ul>
+<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
+<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
+<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
+</ul>
+<p>Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;III&quot;</div><div class="line">Output: 3</div></pre></td></tr></table></figure>
+<p><strong>Example 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;IV&quot;</div><div class="line">Output: 4</div></pre></td></tr></table></figure>
+<p><strong>Example 3:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;IX&quot;</div><div class="line">Output: 9</div></pre></td></tr></table></figure>
+<p><strong>Example 4:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: &quot;LVIII&quot;</div><div class="line">Output: 58</div><div class="line">Explanation: L = 50, V= 5, III = 3.</div></pre></td></tr></table></figure>
+<p><strong>Example 5:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: &quot;MCMXCIV&quot;</div><div class="line">Output: 1994</div><div class="line">Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.</div></pre></td></tr></table></figure>
+<p><strong>Code:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">romanToInt</span><span class="params">(self, s)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type s: str</div><div class="line">        :rtype: int</div><div class="line">        """</div><div class="line">        mapping = &#123;</div><div class="line">            <span class="string">'I'</span>: <span class="number">1</span>,</div><div class="line">            <span class="string">'V'</span>: <span class="number">5</span>,</div><div class="line">            <span class="string">'X'</span>: <span class="number">10</span>,</div><div class="line">            <span class="string">'L'</span>: <span class="number">50</span>,</div><div class="line">            <span class="string">'C'</span>: <span class="number">100</span>,</div><div class="line">            <span class="string">'D'</span>: <span class="number">500</span>,</div><div class="line">            <span class="string">'M'</span>: <span class="number">1000</span></div><div class="line">        &#125;</div><div class="line"></div><div class="line">        total = <span class="number">0</span></div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(s) - <span class="number">1</span>):</div><div class="line">            <span class="keyword">if</span> mapping[s[i]] &gt;= mapping[s[i + <span class="number">1</span>]]:</div><div class="line">                total += mapping[s[i]]</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                total -= mapping[s[i]]</div><div class="line">        <span class="keyword">return</span> total + mapping[s[<span class="number">-1</span>]]</div></pre></td></tr></table></figure>
+<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
+<p>可以翻译，锻炼自己的阅读和英语能力。</p>
+<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
+</blockquote>
+<h3 id="fWaf-–-Machine-learning-driven-Web-Application-Firewall"><a href="#fWaf-–-Machine-learning-driven-Web-Application-Firewall" class="headerlink" title="fWaf – Machine learning driven Web Application Firewall"></a>fWaf – Machine learning driven Web Application Firewall</h3><p><a href="http://web.archive.org/web/20170706222016/http://fsecurify.com/fwaf-machine-learning-driven-web-application-firewall/" target="_blank" rel="external">http://web.archive.org/web/20170706222016/http://fsecurify.com/fwaf-machine-learning-driven-web-application-firewall/</a></p>
+<h3 id="原创翻译-fWaf-机器学习驱动的WAF"><a href="#原创翻译-fWaf-机器学习驱动的WAF" class="headerlink" title="[原创翻译] fWaf - 机器学习驱动的WAF"></a>[原创翻译] fWaf - 机器学习驱动的WAF</h3><p><a href="https://www.t00ls.net/thread-50819-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50819-1-1.html</a></p>
+<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
+<p>生活技巧，学习技巧、工具</p>
+</blockquote>
+<h3 id="各种文件格式转换"><a href="#各种文件格式转换" class="headerlink" title="各种文件格式转换"></a>各种文件格式转换</h3><ul>
+<li>PDF</li>
+<li>Word</li>
+<li>电子书</li>
+<li>图片</li>
+<li>视频</li>
+<li>音频</li>
+<li>压缩</li>
+</ul>
+<p>地址：<a href="https://www.aconvert.com/cn/" target="_blank" rel="external">https://www.aconvert.com/cn/</a></p>
+<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="原创翻译-fWaf-机器学习驱动的WAF-1"><a href="#原创翻译-fWaf-机器学习驱动的WAF-1" class="headerlink" title="[原创翻译] fWaf - 机器学习驱动的WAF"></a>[原创翻译] fWaf - 机器学习驱动的WAF</h3><p><a href="https://www.t00ls.net/thread-50819-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50819-1-1.html</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/ARTS-Week-03/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1718,170 +1899,13 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/13/Python-生成器、循环对象/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/13/Python-生成器、循环对象/" itemprop="url">Python - 生成器、循环对象</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T18:56:21+08:00">
-                2017-05-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Python-生成器、循环对象"><a href="#Python-生成器、循环对象" class="headerlink" title="Python - 生成器、循环对象"></a>Python - 生成器、循环对象</h1><h2 id="1-生成器"><a href="#1-生成器" class="headerlink" title="1. 生成器"></a>1. 生成器</h2><p>生成器(generator)的主要目的是构成一个用户自定义的循环对象。</p>
-<p>生成器的编写方法和函数定义类似，只是在return的地方改为yield。生成器中可以有多个yield。当生成器遇到一个yield时，会暂停运行生成器，返回yield后面的值。当再次调用生成器的时候，会从刚才暂停的地方继续运行，直到下一个yield。生成器自身又构成一个循环器，每次循环使用一个yield返回的值。</p>
-<p>例：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">gen</span><span class="params">()</span>:</span></div><div class="line">    a = <span class="number">100</span></div><div class="line">    <span class="keyword">yield</span> a</div><div class="line">    a = a*<span class="number">8</span></div><div class="line">    <span class="keyword">yield</span> a</div><div class="line">    <span class="keyword">yield</span> <span class="number">1000</span></div><div class="line">    </div><div class="line"><span class="comment">#该生成器共有三个yield， 如果用作循环器时，会进行三次循环。</span></div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> gen():</div><div class="line">    <span class="keyword">print</span> i</div></pre></td></tr></table></figure>
-<p>或：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">gen</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">4</span>):</div><div class="line">        <span class="keyword">yield</span> i</div><div class="line"><span class="comment">#又可以写成生成器表达式(Generator Expression):</span></div><div class="line">G = (x <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">4</span>))</div></pre></td></tr></table></figure>
-<h2 id="2-循环对象"><a href="#2-循环对象" class="headerlink" title="2. 循环对象"></a>2. 循环对象</h2><p>循环对象是这样一个对象，它包含有一个next()方法(<strong>next</strong>()方法，在python 3x中)， 这个方法的目的是进行到下一个结果，而在结束一系列结果之后，举出StopIteration错误。</p>
-<p>当一个循环结构（比如for）调用循环对象时，它就会每次循环的时候调用next()方法，直到StopIteration出现，for循环接收到，就知道循环已经结束，停止调用next()。</p>
-<p>假设我们有一个test.txt的文件:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1234</div><div class="line">abcd</div><div class="line">efg</div></pre></td></tr></table></figure>
-<p>我们运行一下python命令行：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt;f = open(<span class="string">'test.txt'</span>)</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">&gt;&gt;&gt;f.next()</div><div class="line"></div><div class="line">...</div></pre></td></tr></table></figure>
-<p>不断输入f.next()，直到最后出现StopIteration</p>
-<p>open()返回的实际上是一个循环对象，包含有next()方法。而该next()方法每次返回的就是新的一行的内容，到达文件结尾时举出StopIteration。这样，我们相当于手工进行了循环。</p>
-<p>自动进行的话，就是：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> line <span class="keyword">in</span> open(<span class="string">'test.txt'</span>):</div><div class="line">    <span class="keyword">print</span> line</div></pre></td></tr></table></figure>
-<p>在这里，for结构自动调用next()方法，将该方法的返回值赋予给line。循环知道出现StopIteration的时候结束。</p>
-<p>相对于序列，用循环对象的好处在于：不用在循环还没有开始的时候，就生成好要使用的元素。所使用的元素可以在循环过程中逐次生成。这样，节省了空间，提高了效率，编程更灵活。</p>
-<h2 id="3-迭代器"><a href="#3-迭代器" class="headerlink" title="3.迭代器"></a>3.迭代器</h2><p>从技术上来说，循环对象和for循环调用之间还有一个中间层，就是要将循环对象转换成迭代器(iterator)。这一转换是通过使用 iter() 函数实现的。但从逻辑层面上，常常可以忽略这一层，所以循环对象和迭代器常常相互指代对方。</p>
-<h2 id="4-表推导"><a href="#4-表推导" class="headerlink" title="4. 表推导"></a>4. 表推导</h2><p>表推导(list comprehension)是快速生成表的方法。</p>
-<p>如要生成表L：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">L = []</div><div class="line"><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>):</div><div class="line">    L.append(x**<span class="number">2</span>)</div></pre></td></tr></table></figure>
-<p>使用表推导的方式：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">L = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>)]</div></pre></td></tr></table></figure>
-<p>这与生成器表达式类似，只不过用的是中括号。表推导的机制实际上是利用循环对象。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1924,7 +1948,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
