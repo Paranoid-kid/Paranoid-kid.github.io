@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据分析," />
 
 
 
@@ -92,15 +92,14 @@
 
 
 
-<meta name="description" content="微信公众号：一杯过往">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Valar Morghulis">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="keywords" content="数据分析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Numpy简单使用">
+<meta property="og:url" content="http://yoursite.com/2019/04/30/Numpy简单使用/index.html">
 <meta property="og:site_name" content="Valar Morghulis">
-<meta property="og:description" content="微信公众号：一杯过往">
+<meta property="og:updated_time" content="2019-04-29T17:29:01.495Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Valar Morghulis">
-<meta name="twitter:description" content="微信公众号：一杯过往">
+<meta name="twitter:title" content="Numpy简单使用">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/04/30/Numpy简单使用/"/>
 
 
 
 
 
-  <title>Valar Morghulis</title>
+  <title>Numpy简单使用 | Valar Morghulis</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -187,9 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -282,170 +279,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/ARTS-Week-05/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/30/ARTS-Week-05/" itemprop="url">ARTS-Week-05</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T01:45:28+08:00">
-                2019-04-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
-</blockquote>
-<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Longest-Common-Prefix"><a href="#Longest-Common-Prefix" class="headerlink" title="Longest Common Prefix"></a>Longest Common Prefix</h3><p>Write a function to find the longest common prefix string amongst an array of strings.</p>
-<p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>
-<p><strong>Example 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]</div><div class="line">Output: &quot;fl&quot;</div></pre></td></tr></table></figure>
-<p><strong>Example 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]</div><div class="line">Output: &quot;&quot;</div><div class="line">Explanation: There is no common prefix among the input strings.</div></pre></td></tr></table></figure>
-<p><strong>Note:</strong></p>
-<p>All given inputs are in lowercase letters <code>a-z</code>.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">longestCommonPrefix</span><span class="params">(self, strs)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type strs: List[str]</div><div class="line">        :rtype: str</div><div class="line">        """</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> strs:</div><div class="line">            <span class="keyword">return</span> <span class="string">''</span></div><div class="line"></div><div class="line">        max_str = max(strs)</div><div class="line">        min_str = min(strs)</div><div class="line"></div><div class="line">        <span class="keyword">for</span> index, value <span class="keyword">in</span> enumerate(min_str):</div><div class="line">            <span class="keyword">if</span> value != max_str[index]:</div><div class="line">                <span class="keyword">return</span> min_str[:index]</div><div class="line">        <span class="keyword">return</span> min_str</div></pre></td></tr></table></figure>
-<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
-<p>可以翻译，锻炼自己的阅读和英语能力。</p>
-<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
-</blockquote>
-<h3 id="在Hexo博客里引用Jupyter-notebook内容"><a href="#在Hexo博客里引用Jupyter-notebook内容" class="headerlink" title="在Hexo博客里引用Jupyter notebook内容"></a>在Hexo博客里引用Jupyter notebook内容</h3><p><a href="https://medium.com/@juanx002/blogging-jupyter-notebooks-ipynb-with-hexo-on-github-7948b72636dc" target="_blank" rel="external">https://medium.com/@juanx002/blogging-jupyter-notebooks-ipynb-with-hexo-on-github-7948b72636dc</a></p>
-<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
-<p>生活技巧，学习技巧、工具</p>
-</blockquote>
-<h3 id="在线时区换算工具"><a href="#在线时区换算工具" class="headerlink" title="在线时区换算工具"></a><strong>在线时区换算工具</strong></h3><ul>
-<li>以后会考虑自己写一个转换脚本</li>
-</ul>
-<p>地址：<a href="http://www.timebie.com/" target="_blank" rel="external">http://www.timebie.com/</a></p>
-<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="Numpy简单使用"><a href="#Numpy简单使用" class="headerlink" title="Numpy简单使用"></a>Numpy简单使用</h3><p><a href="https://paranoid-kid.github.io/2019/04/30/Numpy%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" target="_blank" rel="external">https://paranoid-kid.github.io/2019/04/30/Numpy%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
 
   
 
@@ -471,9 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/30/Numpy简单使用/" itemprop="url">Numpy简单使用</a></h1>
+          <h1 class="post-title" itemprop="name headline">Numpy简单使用</h1>
         
 
         <div class="post-meta">
@@ -527,6 +361,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -545,9 +384,7 @@
       
 
       
-        
-          
-            <p><script src="http://code.jquery.com/jquery-2.0.0.js"></script><br>
+        <p><script src="http://code.jquery.com/jquery-2.0.0.js"></script><br>
 <iframe id="ipynb" marginheight="0" frameborder="0" width="724px" srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
@@ -12927,1375 +12764,81 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
     
 </p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.png" alt="小明 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/16/ARTS-Week-04/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/16/ARTS-Week-04/" itemprop="url">ARTS-Week-04</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-16T17:37:50+08:00">
-                2019-04-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/数据分析/" rel="tag"># 数据分析</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <blockquote>
-<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
-</blockquote>
-<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Roman-to-Integer"><a href="#Roman-to-Integer" class="headerlink" title="Roman to Integer"></a>Roman to Integer</h3><p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Symbol       Value</div><div class="line">I             1</div><div class="line">V             5</div><div class="line">X             10</div><div class="line">L             50</div><div class="line">C             100</div><div class="line">D             500</div><div class="line">M             1000</div></pre></td></tr></table></figure>
-<p>For example, two is written as <code>II</code> in Roman numeral, just two one’s added together. Twelve is written as, <code>XII</code>, which is simply <code>X</code> + <code>II</code>. The number twenty seven is written as <code>XXVII</code>, which is <code>XX</code> + <code>V</code> + <code>II</code>.</p>
-<p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p>
-<ul>
-<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
-<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
-<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
-</ul>
-<p>Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.</p>
-<p><strong>Example 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;III&quot;</div><div class="line">Output: 3</div></pre></td></tr></table></figure>
-<p><strong>Example 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;IV&quot;</div><div class="line">Output: 4</div></pre></td></tr></table></figure>
-<p><strong>Example 3:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;IX&quot;</div><div class="line">Output: 9</div></pre></td></tr></table></figure>
-<p><strong>Example 4:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: &quot;LVIII&quot;</div><div class="line">Output: 58</div><div class="line">Explanation: L = 50, V= 5, III = 3.</div></pre></td></tr></table></figure>
-<p><strong>Example 5:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: &quot;MCMXCIV&quot;</div><div class="line">Output: 1994</div><div class="line">Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.</div></pre></td></tr></table></figure>
-<p><strong>Code:</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">romanToInt</span><span class="params">(self, s)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type s: str</div><div class="line">        :rtype: int</div><div class="line">        """</div><div class="line">        mapping = &#123;</div><div class="line">            <span class="string">'I'</span>: <span class="number">1</span>,</div><div class="line">            <span class="string">'V'</span>: <span class="number">5</span>,</div><div class="line">            <span class="string">'X'</span>: <span class="number">10</span>,</div><div class="line">            <span class="string">'L'</span>: <span class="number">50</span>,</div><div class="line">            <span class="string">'C'</span>: <span class="number">100</span>,</div><div class="line">            <span class="string">'D'</span>: <span class="number">500</span>,</div><div class="line">            <span class="string">'M'</span>: <span class="number">1000</span></div><div class="line">        &#125;</div><div class="line"></div><div class="line">        total = <span class="number">0</span></div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(s) - <span class="number">1</span>):</div><div class="line">            <span class="keyword">if</span> mapping[s[i]] &gt;= mapping[s[i + <span class="number">1</span>]]:</div><div class="line">                total += mapping[s[i]]</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                total -= mapping[s[i]]</div><div class="line">        <span class="keyword">return</span> total + mapping[s[<span class="number">-1</span>]]</div></pre></td></tr></table></figure>
-<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
-<p>可以翻译，锻炼自己的阅读和英语能力。</p>
-<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
-</blockquote>
-<h3 id="fWaf-–-Machine-learning-driven-Web-Application-Firewall"><a href="#fWaf-–-Machine-learning-driven-Web-Application-Firewall" class="headerlink" title="fWaf – Machine learning driven Web Application Firewall"></a>fWaf – Machine learning driven Web Application Firewall</h3><p><a href="http://web.archive.org/web/20170706222016/http://fsecurify.com/fwaf-machine-learning-driven-web-application-firewall/" target="_blank" rel="external">http://web.archive.org/web/20170706222016/http://fsecurify.com/fwaf-machine-learning-driven-web-application-firewall/</a></p>
-<h3 id="原创翻译-fWaf-机器学习驱动的WAF"><a href="#原创翻译-fWaf-机器学习驱动的WAF" class="headerlink" title="[原创翻译] fWaf - 机器学习驱动的WAF"></a>[原创翻译] fWaf - 机器学习驱动的WAF</h3><p><a href="https://www.t00ls.net/thread-50819-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50819-1-1.html</a></p>
-<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
-<p>生活技巧，学习技巧、工具</p>
-</blockquote>
-<h3 id="各种文件格式转换"><a href="#各种文件格式转换" class="headerlink" title="各种文件格式转换"></a>各种文件格式转换</h3><ul>
-<li>PDF</li>
-<li>Word</li>
-<li>电子书</li>
-<li>图片</li>
-<li>视频</li>
-<li>音频</li>
-<li>压缩</li>
-</ul>
-<p>地址：<a href="https://www.aconvert.com/cn/" target="_blank" rel="external">https://www.aconvert.com/cn/</a></p>
-<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="原创翻译-fWaf-机器学习驱动的WAF-1"><a href="#原创翻译-fWaf-机器学习驱动的WAF-1" class="headerlink" title="[原创翻译] fWaf - 机器学习驱动的WAF"></a>[原创翻译] fWaf - 机器学习驱动的WAF</h3><p><a href="https://www.t00ls.net/thread-50819-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50819-1-1.html</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/ARTS-Week-03/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/08/ARTS-Week-03/" itemprop="url">ARTS-Week-03</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T21:07:05+08:00">
-                2019-04-08
-              </time>
+              <a href="/2019/04/16/ARTS-Week-04/" rel="next" title="ARTS-Week-04">
+                <i class="fa fa-chevron-left"></i> ARTS-Week-04
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
+              <a href="/2019/04/30/ARTS-Week-05/" rel="prev" title="ARTS-Week-05">
+                ARTS-Week-05 <i class="fa fa-chevron-right"></i>
+              </a>
             
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
-</blockquote>
-<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Palindrome-Number"><a href="#Palindrome-Number" class="headerlink" title="Palindrome Number"></a>Palindrome Number</h3><p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
-<p><strong>Example 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: 121</div><div class="line">Output: true</div></pre></td></tr></table></figure>
-<p><strong>Example 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: -121</div><div class="line">Output: false</div><div class="line">Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.</div></pre></td></tr></table></figure>
-<p><strong>Example 3:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Input: 10</div><div class="line">Output: false</div><div class="line">Explanation: Reads 01 from right to left. Therefore it is not a palindrome.</div></pre></td></tr></table></figure>
-<p><strong>Code</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isPalindrome</span><span class="params">(self, x)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type x: int</div><div class="line">        :rtype: bool</div><div class="line">        """</div><div class="line">        <span class="comment"># 先转为String然后反转比较</span></div><div class="line">        <span class="keyword">return</span> <span class="keyword">False</span> <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">else</span> str(x) == str(x)[::<span class="number">-1</span>]</div></pre></td></tr></table></figure>
-<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
-<p>可以翻译，锻炼自己的阅读和英语能力。</p>
-<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
-</blockquote>
-<h3 id="Using-Machine-Learning-to-Detect-Malicious-URLs"><a href="#Using-Machine-Learning-to-Detect-Malicious-URLs" class="headerlink" title="Using Machine Learning to Detect Malicious URLs"></a>Using Machine Learning to Detect Malicious URLs</h3><p><a href="http://web.archive.org/web/20170514093208/http://fsecurify.com/using-machine-learning-detect-malicious-urls/" target="_blank" rel="external">http://web.archive.org/web/20170514093208/http://fsecurify.com/using-machine-learning-detect-malicious-urls/</a></p>
-<h3 id="原创翻译-使用机器学习方法检测恶意URL"><a href="#原创翻译-使用机器学习方法检测恶意URL" class="headerlink" title="[原创翻译] 使用机器学习方法检测恶意URL"></a>[原创翻译] 使用机器学习方法检测恶意URL</h3><p><a href="https://www.t00ls.net/thread-50650-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50650-1-1.html</a></p>
-<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
-<p>生活技巧，学习技巧、工具</p>
-</blockquote>
-<h3 id="使用Markdown排版微信公众号文章"><a href="#使用Markdown排版微信公众号文章" class="headerlink" title="使用Markdown排版微信公众号文章"></a>使用Markdown排版微信公众号文章</h3><p>wechat-format可转化 Markdown 到给微信特制的 HTML</p>
-<p>项目地址：</p>
-<p><a href="https://github.com/lyricat/wechat-format" target="_blank" rel="external">https://github.com/lyricat/wechat-format</a></p>
-<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="原创翻译-使用机器学习方法检测恶意URL-1"><a href="#原创翻译-使用机器学习方法检测恶意URL-1" class="headerlink" title="[原创翻译] 使用机器学习方法检测恶意URL"></a>[原创翻译] 使用机器学习方法检测恶意URL</h3><p><a href="https://www.t00ls.net/thread-50650-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50650-1-1.html</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/ARTS-Week-02/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/03/ARTS-Week-02/" itemprop="url">ARTS-Week-02</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-03T18:40:27+08:00">
-                2019-04-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
-</blockquote>
-<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Reverse-Integer"><a href="#Reverse-Integer" class="headerlink" title="Reverse Integer"></a>Reverse Integer</h3><p>Given a 32-bit signed integer, reverse digits of an integer.</p>
-<p><strong>Example 1:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: 123</div><div class="line">Output: 321</div></pre></td></tr></table></figure>
-<p><strong>Example 2:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: -123</div><div class="line">Output: -321</div></pre></td></tr></table></figure>
-<p><strong>Example 3:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: 120</div><div class="line">Output: 21</div></pre></td></tr></table></figure>
-<p><strong>Note:</strong><br>Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.</p>
-<p><strong>Code:</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">reverse</span><span class="params">(self, x)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type x: int</div><div class="line">        :rtype: int</div><div class="line">        """</div><div class="line">        reversed_int = int(str(abs(x))[::<span class="number">-1</span>])</div><div class="line">        <span class="keyword">if</span> reversed_int &gt;= <span class="number">2</span> ** <span class="number">31</span> - <span class="number">1</span> <span class="keyword">or</span> x == <span class="number">0</span>:</div><div class="line">            <span class="keyword">return</span> <span class="number">0</span></div><div class="line">        <span class="keyword">return</span> reversed_int * <span class="number">-1</span> <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">else</span> reversed_int</div></pre></td></tr></table></figure>
-<p> Tips：</p>
-<ul>
-<li>将有符号数先取绝对值</li>
-<li>使用Python扩展切片反转字符串</li>
-</ul>
-<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
-<p>可以翻译，锻炼自己的阅读和英语能力。</p>
-<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
-</blockquote>
-<h3 id="Machine-Learning-based-Password-Strength-Classification"><a href="#Machine-Learning-based-Password-Strength-Classification" class="headerlink" title="Machine Learning based Password Strength Classification"></a>Machine Learning based Password Strength Classification</h3><p><a href="http://web.archive.org/web/20170606022743/http://fsecurify.com/machine-learning-based-password-strength-checking/" target="_blank" rel="external">http://web.archive.org/web/20170606022743/http://fsecurify.com/machine-learning-based-password-strength-checking/</a></p>
-<h3 id="【原创翻译】基于机器学习的密码强度检测"><a href="#【原创翻译】基于机器学习的密码强度检测" class="headerlink" title="【原创翻译】基于机器学习的密码强度检测"></a>【原创翻译】基于机器学习的密码强度检测</h3><p><a href="https://www.t00ls.net/viewthread.php?tid=50581" target="_blank" rel="external">https://www.t00ls.net/viewthread.php?tid=50581</a></p>
-<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
-<p>生活技巧，学习技巧、工具</p>
-</blockquote>
-<h3 id="Online-Table-Convert-Tool"><a href="#Online-Table-Convert-Tool" class="headerlink" title="Online Table Convert Tool"></a>Online Table Convert Tool</h3><p>此网站可在线将各种格式的表格数据互相转换</p>
-<p><strong>支持导入格式：</strong></p>
-<ul>
-<li>Excel</li>
-<li>URL</li>
-<li>HTML</li>
-<li>Markdown</li>
-<li>CSV </li>
-</ul>
-<p><strong>支持导出的格式：</strong></p>
-<ul>
-<li>Excel</li>
-<li>URL</li>
-<li>HTML</li>
-<li>JSON</li>
-<li>XML</li>
-<li>YAML</li>
-<li>SQL</li>
-<li>LaTeX</li>
-<li>Markdown</li>
-<li>CSV/TSV</li>
-<li>Text</li>
-</ul>
-<p>地址：<a href="https://tableconvert.com/" target="_blank" rel="external">https://tableconvert.com/</a></p>
-<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="【原创翻译】基于机器学习的密码强度检测-1"><a href="#【原创翻译】基于机器学习的密码强度检测-1" class="headerlink" title="【原创翻译】基于机器学习的密码强度检测"></a>【原创翻译】基于机器学习的密码强度检测</h3><p><a href="https://www.t00ls.net/viewthread.php?tid=50581" target="_blank" rel="external">https://www.t00ls.net/viewthread.php?tid=50581</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/03/ARTS-Week-01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/03/ARTS-Week-01/" itemprop="url">ARTS-Week-01</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-03T17:33:13+08:00">
-                2019-04-03
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ARTS/" itemprop="url" rel="index">
-                    <span itemprop="name">ARTS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
-</blockquote>
-<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Two-Sum"><a href="#Two-Sum" class="headerlink" title="Two Sum"></a>Two Sum</h3><p>Given an array of integers, return <strong>indices</strong> of the two numbers such that they add up to a specific target.</p>
-<p>You may assume that each input would have <strong>exactly</strong> one solution, and you may not use the <em>same</em> element twice.</p>
-<p><strong>Example:</strong></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Given nums = [<span class="number">2</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">15</span>], target = <span class="number">9</span>,</div><div class="line"></div><div class="line">Because nums[<span class="number">0</span>] + nums[<span class="number">1</span>] = <span class="number">2</span> + <span class="number">7</span> = <span class="number">9</span>,</div><div class="line"><span class="keyword">return</span> [<span class="number">0</span>, <span class="number">1</span>].</div></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type nums: List[int]</div><div class="line">        :type target: int</div><div class="line">        :rtype: List[int]</div><div class="line">        """</div><div class="line">        d = &#123;&#125;</div><div class="line">        <span class="keyword">for</span> i, num <span class="keyword">in</span> enumerate(nums):</div><div class="line">            <span class="comment"># check if num is in the hash map</span></div><div class="line">            <span class="keyword">if</span> num <span class="keyword">in</span> d:</div><div class="line">                <span class="keyword">return</span> [d[num], i]</div><div class="line">            <span class="comment"># (target - num) means what number I want to be added to get the target</span></div><div class="line">            d[target - num] = i</div></pre></td></tr></table></figure>
-<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
-<p>可以翻译，锻炼自己的阅读和英语能力。</p>
-<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
-</blockquote>
-<h3 id="Using-sk-learn-to-analyze-SQL-Injection"><a href="#Using-sk-learn-to-analyze-SQL-Injection" class="headerlink" title="Using sk-learn to analyze SQL Injection"></a>Using sk-learn to analyze SQL Injection</h3><p><a href="http://nbviewer.ipython.org/url/raw.github.com/ClickSecurity/data_hacking/master/sql_injection/sql_injection.ipynb" target="_blank" rel="external">http://nbviewer.ipython.org/url/raw.github.com/ClickSecurity/data_hacking/master/sql_injection/sql_injection.ipynb</a></p>
-<h3 id="原创翻译-使用机器学习方法分析SQL注入"><a href="#原创翻译-使用机器学习方法分析SQL注入" class="headerlink" title="[原创翻译] 使用机器学习方法分析SQL注入"></a>[原创翻译] 使用机器学习方法分析SQL注入</h3><p><a href="https://www.t00ls.net/thread-50411-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50411-1-1.html</a></p>
-<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
-<p>生活技巧，学习技巧、工具</p>
-</blockquote>
-<h3 id="Tex-amp-Markdown"><a href="#Tex-amp-Markdown" class="headerlink" title="Tex &amp; Markdown"></a>Tex &amp; Markdown</h3><p>如何在Markdown中插入数学公式</p>
-<p>Markdown支持Tex语法插入数学公式</p>
-<ul>
-<li>行内公式 <code>$ ... $</code></li>
-<li>行间公式 <code>$$ ... $$</code></li>
-</ul>
-<p>常用Command：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">\(空格) 词间空格</div><div class="line">\sum_&#123;i=0&#125;^&#123;n&#125; 求和符号</div><div class="line">^&#123;上标&#125;</div><div class="line">_&#123;下标&#125;</div><div class="line">\frac&#123;x+y&#125;&#123;2&#125; 分式</div><div class="line">\alpha</div><div class="line">\\ 换行</div><div class="line">\times 乘号</div><div class="line"></div><div class="line">矩阵</div><div class="line"></div><div class="line">\left[</div><div class="line"> \begin&#123;matrix&#125;</div><div class="line">   0 &amp; 0 &amp; 0 &amp; 0 \\</div><div class="line">   0 &amp; 0 &amp; 0 &amp; 0 \\</div><div class="line">   0 &amp; 0 &amp; 0 &amp; 0 \\</div><div class="line">   0 &amp; w &amp; 0 &amp; 0</div><div class="line">  \end&#123;matrix&#125; </div><div class="line">\right]</div></pre></td></tr></table></figure>
-<p>更多：</p>
-<p><a href="http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands" target="_blank" rel="external">http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands</a></p>
-<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="原创翻译-使用机器学习方法分析SQL注入-1"><a href="#原创翻译-使用机器学习方法分析SQL注入-1" class="headerlink" title="[原创翻译] 使用机器学习方法分析SQL注入"></a>[原创翻译] 使用机器学习方法分析SQL注入</h3><p><a href="https://www.t00ls.net/thread-50411-1-1.html" target="_blank" rel="external">https://www.t00ls.net/thread-50411-1-1.html</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/05/Mint基本配置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/05/Mint基本配置/" itemprop="url">Mint基本配置</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-05T22:19:46+08:00">
-                2017-11-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="1-解决上网问题"><a href="#1-解决上网问题" class="headerlink" title="1.解决上网问题"></a>1.解决上网问题</h1><h2 id="1-1下载相关软件"><a href="#1-1下载相关软件" class="headerlink" title="1.1下载相关软件"></a>1.1下载相关软件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo add-apt-repository ppa:hzwhuang/ss-qt5</div><div class="line"><span class="meta">$</span> sudo apt update</div><div class="line"><span class="meta">$</span> sudo apt install shadowsocks-qt5</div><div class="line"><span class="meta">$</span> sudo apt install proxychains</div></pre></td></tr></table></figure>
-<h2 id="1-2更改-proxychains-文件"><a href="#1-2更改-proxychains-文件" class="headerlink" title="1.2更改 proxychains 文件"></a>1.2更改 proxychains 文件</h2><p>将 /etc/proxychains.conf 最后面 sock4 改为 sock5</p>
-<h2 id="1-3安装相关软件"><a href="#1-3安装相关软件" class="headerlink" title="1.3安装相关软件"></a>1.3安装相关软件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo -s</div><div class="line"><span class="meta">$</span> proxychains bash &lt;(curl -L -s https://install.direct/go.sh)</div></pre></td></tr></table></figure>
-<p>相关路径：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/etc/v2ray/config.json</div><div class="line">/usr/bin/v2ray/v2ray</div></pre></td></tr></table></figure>
-<p>× vim 下 快速清空文件：<br>首先，使用 gg 调整光标到首行，然后使用 dG 命令即可。</p>
-<h1 id="2-安装常用开发环境"><a href="#2-安装常用开发环境" class="headerlink" title="2.安装常用开发环境"></a>2.安装常用开发环境</h1><h2 id="2-1-配置-Java-环境"><a href="#2-1-配置-Java-环境" class="headerlink" title="2.1 配置 Java 环境"></a>2.1 配置 Java 环境</h2><h3 id="2-1-1-apt-安装"><a href="#2-1-1-apt-安装" class="headerlink" title="2.1.1 apt 安装"></a>2.1.1 apt 安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo add-apt-repository ppa:webupd8team/java</div><div class="line"><span class="meta">$</span> sudo apt update</div><div class="line"><span class="meta">$</span> sudo apt install oracle-java8-installer</div><div class="line"><span class="meta">$</span> sudo apt install oracle-java8-set-default</div></pre></td></tr></table></figure>
-<h3 id="2-1-2-手动安装"><a href="#2-1-2-手动安装" class="headerlink" title="2.1.2 手动安装"></a>2.1.2 手动安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> gunzip jdk-9u90-linux-x64.gz</div><div class="line"><span class="meta">$</span> sudo mkdir /usr/lib/jvm</div><div class="line"><span class="meta">$</span> sudo mv jdk-9u90-linux-x64 /usr/lib/jvm/jdk8</div></pre></td></tr></table></figure>
-<h3 id="2-1-3-设置-JAVA-HOME"><a href="#2-1-3-设置-JAVA-HOME" class="headerlink" title="2.1.3 设置 JAVA_HOME"></a>2.1.3 设置 JAVA_HOME</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> vim /etc/profile</div><div class="line">添加如下两条</div><div class="line">export JAVA_HOME=/usr/lib/jvm/java-8-oracle/</div><div class="line">export PATH=$JAVA_HOME/bin:$PATH</div><div class="line">保存，更新</div><div class="line"><span class="meta">$</span> source /etc/profile</div></pre></td></tr></table></figure>
-<h2 id="2-2-配置-Pycharm-IDEA-快捷方式"><a href="#2-2-配置-Pycharm-IDEA-快捷方式" class="headerlink" title="2.2 配置 Pycharm / IDEA 快捷方式"></a>2.2 配置 Pycharm / IDEA 快捷方式</h2><p>创建 Pycharm.desktop 桌面快捷方式：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">!/usr/bin/env xdg-open</div><div class="line">[Desktop Entry]</div><div class="line">Type=Application</div><div class="line">Name=Pycharm</div><div class="line">GenericName=Pycharm3</div><div class="line">Comment=Pycharm3:The Python IDE</div><div class="line">Exec=/opt/pycharm-2017.2.3/bin/pycharm.sh</div><div class="line">Icon=/opt/pycharm-2017.2.3/bin/pycharm.png</div><div class="line">Terminal=pycharm</div><div class="line">Categories=Pycharm;</div></pre></td></tr></table></figure>
-<p>软链接</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo ln -s /opt/pycharm-4.0.1/bin/pycharm.sh /usr/bin/pycharm</div></pre></td></tr></table></figure>
-<p>*IDEA 同理</p>
-<hr>
-<p>附：Pycharm安装文档</p>
-<p><a href="https://confluence.jetbrains.com/display/PYH/Installing+PyCharm+on+Linux+according+to+FHS" target="_blank" rel="external">https://confluence.jetbrains.com/display/PYH/Installing+PyCharm+on+Linux+according+to+FHS</a></p>
-<h1 id="3-其他配置"><a href="#3-其他配置" class="headerlink" title="3.其他配置"></a>3.其他配置</h1><h2 id="3-1搜狗输入法"><a href="#3-1搜狗输入法" class="headerlink" title="3.1搜狗输入法"></a>3.1搜狗输入法</h2><p>安装完后重启，在 Fcitx 配置里添加即可</p>
-<p>将输入法顺序改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">键盘 - 英语</div><div class="line">搜狗拼音</div><div class="line">键盘 - 汉语</div></pre></td></tr></table></figure>
-<p>此时第一个输入法作为非激活状态， Shift 就会在这两个激活的汉字与拼音输入法之间切换。而 Ctrl + Space 则会在非激活与激活的输入法即中文与英文之间切换。</p>
-<h2 id="3-2-Conky-配置"><a href="#3-2-Conky-配置" class="headerlink" title="3.2 Conky 配置"></a>3.2 Conky 配置</h2><p>主题包 Deluxe_Conky_Theme_Pack.cmtp.7z 下载地址：</p>
-<p><a href="http://download1475.mediafire.com/5enbc84w1i5g/5yb5ambg6h4jack/Deluxe_Conky_Theme_Pack.cmtp.7z" target="_blank" rel="external">http://download1475.mediafire.com/5enbc84w1i5g/5yb5ambg6h4jack/Deluxe_Conky_Theme_Pack.cmtp.7z</a></p>
-<p>导入完成后解决不固定在桌面的问题：</p>
-<p>在配置文件里写入：own_window_type desktop</p>
-<p>此时 Win + D 就不会让 Conky 消失了</p>
-<h2 id="3-3-安装-Windows-字体"><a href="#3-3-安装-Windows-字体" class="headerlink" title="3.3 安装 Windows 字体"></a>3.3 安装 Windows 字体</h2><p>可以直接拷贝已有 Windows 系统的字体。</p>
-<p>Windows 的字体文件在 C:\Windows\Fonts 里，新建 /usr/share/fonts/WindowsFonts 目录并把字体文件拷贝到其中。</p>
-<p>然后更改字体文件的权限：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo chmod 755 /usr/share/fonts/WindowsFonts/*</div></pre></td></tr></table></figure>
-<p>最后更新字体缓存：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo mkfontscale &amp;&amp; mkfontdir &amp;&amp; fc-cache -fv</div></pre></td></tr></table></figure>
-<p>× Linux 自带 Noto Sans Mono CJK   思源黑体等宽也不错</p>
-<h2 id="3-4-更改目录为英文"><a href="#3-4-更改目录为英文" class="headerlink" title="3.4 更改目录为英文"></a>3.4 更改目录为英文</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> export LANG=en_US</div><div class="line"><span class="meta">$</span> xdg-user-dirs-gtk-update</div><div class="line"><span class="meta">$</span> export LANG=zh_CN</div></pre></td></tr></table></figure>
-<p>注销或重启后生效。</p>
-<h2 id="3-5-Sublime-Text-不能使用搜狗输入法解决办法"><a href="#3-5-Sublime-Text-不能使用搜狗输入法解决办法" class="headerlink" title="3.5 Sublime Text 不能使用搜狗输入法解决办法"></a>3.5 Sublime Text 不能使用搜狗输入法解决办法</h2><p>首先检查是否安装GTK库</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">pkg-config --modversion gtk+ (查看1.2.x版本)</div><div class="line">pkg-config --modversion gtk+-2.0 (查看 2.x 版本)</div><div class="line">pkg-config --version (查看pkg-config的版本)</div><div class="line">pkg-config --list-all grep gtk (查看是否安装了gtk)</div></pre></td></tr></table></figure>
-<p>如没有的话需要安装</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo apt-get install libgtk2.0-dev</div></pre></td></tr></table></figure>
-<p>然后编译动态库</p>
-<p>保存以下代码到 sublime_text.c</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**********************************************************</span></div><div class="line">    &gt; File Name: sublime_imfix.c</div><div class="line">    &gt; Author: GatieMe</div><div class="line">    &gt; Mail: gatieme@163.com </div><div class="line">    &gt; Created Time: 2015年04月04日 星期六 20时20分12秒</div><div class="line"> **********************************************************/</div><div class="line"></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;gtk/gtkimcontext.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> </span></div><div class="line"><span class="title">gtk_im_context_set_client_window</span> <span class="params">(</span></div><div class="line">                                GtkIMContext *context,</div><div class="line">                                GdkWindow    *window)</div><div class="line">&#123;</div><div class="line">    GtkIMContextClass *klass;</div><div class="line">    g_return_if_fail (GTK_IS_IM_CONTEXT (context));</div><div class="line">    klass = GTK_IM_CONTEXT_GET_CLASS (context);</div><div class="line"></div><div class="line">    <span class="keyword">if</span> (klass-&gt;set_client_window)</div><div class="line">    &#123;</div><div class="line">        klass-&gt;set_client_window (context, window);</div><div class="line">    &#125;</div><div class="line">    g_object_set_data(G_OBJECT(context),<span class="string">"window"</span>,window);</div><div class="line"></div><div class="line">    <span class="keyword">if</span>(!GDK_IS_WINDOW (window))</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">int</span> width = gdk_window_get_width(window);</div><div class="line">    <span class="keyword">int</span> height = gdk_window_get_height(window);</div><div class="line"></div><div class="line">    <span class="keyword">if</span>(width != <span class="number">0</span> &amp;&amp; height !=<span class="number">0</span>)</div><div class="line">    &#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    gtk_im_context_focus_in(context);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>编译：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC</div></pre></td></tr></table></figure>
-<p>然后将其拷贝到 /opt/sublime_text 目录下</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo cp libsublime-imfix.so /opt/sublime_text/libsublime-imfix.so</div></pre></td></tr></table></figure>
-<p>修改sublime-text.desktop</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> sudo vim /usr/share/applications/sublime_text.desktop</div></pre></td></tr></table></figure>
-<p>参照如下信息进行修改</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">[Desktop Entry]</div><div class="line">Version=1.0</div><div class="line">Type=Application</div><div class="line">Name=Sublime Text</div><div class="line">GenericName=Text Editor</div><div class="line">Comment=Sophisticated text editor for code, markup and prose</div><div class="line">Exec=/usr/bin/subl %F        #这里修改执行路径为/usr/bin/subl</div><div class="line">Terminal=false</div><div class="line">MimeType=text/plain;        </div><div class="line">Icon=sublime-text</div><div class="line">Categories=TextEditor;Development;</div><div class="line">StartupNotify=true</div><div class="line">Actions=Window;Document;</div><div class="line"></div><div class="line">[Desktop Action Window]</div><div class="line">Name=New Window</div><div class="line">Exec=/usr/bin/subl -n       #这里修改执行路径为/usr/bin/subl</div><div class="line">OnlyShowIn=Unity;</div><div class="line"></div><div class="line">[Desktop Action Document]</div><div class="line">Name=New File</div><div class="line">Exec=/usr/bin/subl new_file    #这里修改执行路径为/usr/bin/subl,subl</div><div class="line">OnlyShowIn=Unity;</div></pre></td></tr></table></figure>
-<p>保存后重启软件即可。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/06/Ubuntu折腾日记-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/06/Ubuntu折腾日记-2/" itemprop="url">Ubuntu折腾日记(2)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-06T13:05:02+08:00">
-                2017-06-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Ubuntu折腾日记-2"><a href="#Ubuntu折腾日记-2" class="headerlink" title="Ubuntu折腾日记(2)"></a>Ubuntu折腾日记(2)</h1><h2 id="1-双系统下无法挂载-NTFS-分区问题"><a href="#1-双系统下无法挂载-NTFS-分区问题" class="headerlink" title="1.双系统下无法挂载 NTFS 分区问题"></a>1.双系统下无法挂载 NTFS 分区问题</h2><ul>
-<li>报错：Unable to access “新加卷”</li>
-<li>原因：可能是 Win 未正常关机所造成</li>
-<li>解决：使用ntfsfix工具</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ntfsfix /dev/sda1    # /dev/sdaX  X 为分区编号</div></pre></td></tr></table></figure>
-<h2 id="2-安装-WPS-出现系统缺失字体"><a href="#2-安装-WPS-出现系统缺失字体" class="headerlink" title="2. 安装 WPS 出现系统缺失字体"></a>2. 安装 WPS 出现系统缺失字体</h2><ul>
-<li>原因: WPS for Linux没有自带windows的字体，只要在Linux系统中加载字体即可。</li>
-<li>解决:</li>
-</ul>
-<p>首先下载缺失的字体文件</p>
-<blockquote>
-<p>地址：<a href="https://pan.baidu.com/s/1eS6xIzo" target="_blank" rel="external">https://pan.baidu.com/s/1eS6xIzo</a></p>
-</blockquote>
-<p>下载完成后，解压并进入目录中，继续执行：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo cp * /usr/share/fonts</div></pre></td></tr></table></figure>
-<ol>
-<li><p>执行以下命令,生成字体的索引信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkfontscale</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo mkfontdir</div></pre></td></tr></table></figure>
-</li>
-<li><p>运行 fc-cache 命令更新字体缓存</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo fc-cache</div></pre></td></tr></table></figure>
-</li>
-<li><p>重启WPS即可，字体缺失的提示不再出现。</p>
-</li>
-</ol>
-<ul>
-<li>WPS 卸载: sudo apt-get remove wps-office</li>
-</ul>
-<h2 id="3-画面撕裂"><a href="#3-画面撕裂" class="headerlink" title="3. 画面撕裂"></a>3. 画面撕裂</h2><p>解决：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo vim /usr/share/X11/xorg.conf.d/20-intel.conf</div></pre></td></tr></table></figure>
-<p>创建新文件，写入选项：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">Section "Device"</div><div class="line">   Identifier  "Intel Graphics"</div><div class="line">   Driver      "intel"</div><div class="line">   Option      "TearFree"    "true"</div><div class="line">EndSection</div></pre></td></tr></table></figure>
-<p>重启后就可以了，至于 NV 显卡是不是有用，不确定</p>
-<h2 id="4-查看网络使用情况"><a href="#4-查看网络使用情况" class="headerlink" title="4.查看网络使用情况"></a>4.查看网络使用情况</h2><p>使用 nethogs 工具</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt install nethogs</div><div class="line">sudo nethogs</div></pre></td></tr></table></figure>
-<h2 id="5-rar-文件的批量解压"><a href="#5-rar-文件的批量解压" class="headerlink" title="5.rar 文件的批量解压"></a>5.rar 文件的批量解压</h2><p>安装:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install rar</div><div class="line">sudo ln -fs /usr/bin/rar /usr/bin/unrar</div></pre></td></tr></table></figure>
-<p>Python脚本:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="comment"># -*- coding: utf-8 -*-</span></div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">getFiles</span><span class="params">()</span>:</span></div><div class="line">    <span class="keyword">return</span> os.popen(<span class="string">'ls *.rar'</span>).readlines()</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">unrarFile</span><span class="params">(filename)</span>:</span></div><div class="line">    <span class="keyword">print</span> (<span class="string">"Processing File "</span> + filename)</div><div class="line">    print(os.popen(<span class="string">'unrar x '</span> + filename))</div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">unrarFiles</span><span class="params">(filenames)</span>:</span></div><div class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> filenames:</div><div class="line">        unrarFile(filename.strip())</div><div class="line">unrarFiles(getFiles())</div><div class="line"></div><div class="line">-------------------------------------------</div><div class="line">$ ./unrar.py</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/20/Win-2008-配置问题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/20/Win-2008-配置问题/" itemprop="url">Win 2008 配置问题</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-20T16:31:21+08:00">
-                2017-05-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Win-2008-配置问题"><a href="#Win-2008-配置问题" class="headerlink" title="Win 2008 配置问题"></a>Win 2008 配置问题</h1><h2 id="1-访问网站-500-错误"><a href="#1-访问网站-500-错误" class="headerlink" title="1. 访问网站 500 错误"></a>1. 访问网站 500 错误</h2><h3 id="1-1-asp-net-4-0-支持"><a href="#1-1-asp-net-4-0-支持" class="headerlink" title="1.1 asp.net 4.0 支持"></a>1.1 asp.net 4.0 支持</h3><p>默认安装IIS7之后，是支持asp.net 2.0的。但是如果你先按照了framework 4.0，在安装的iis7asp.net 4.0是会报错的。</p>
-<p>可在CMD下输入：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Windows\Microsoft.NET\Framework\V4.<span class="number">0.30319</span>\aspnet_regiis -i    <span class="comment"># X64</span></div></pre></td></tr></table></figure>
-<h3 id="1-2-权限问题"><a href="#1-2-权限问题" class="headerlink" title="1.2 权限问题"></a>1.2 权限问题</h3><p>解决方法：在组或用户名下添加Everyone用户，增加修改权限。</p>
-<p>如果文件在桌面的话，更需要设置Everyone的读写权限。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/20/Ubuntu折腾日记(1)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小明">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Valar Morghulis">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/20/Ubuntu折腾日记(1)/" itemprop="url">Ubuntu折腾日记(1)</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-20T16:25:55+08:00">
-                2017-05-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-          
-
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Ubuntu-折腾日记-1"><a href="#Ubuntu-折腾日记-1" class="headerlink" title="Ubuntu 折腾日记(1)"></a>Ubuntu 折腾日记(1)</h1><h2 id="1-Chrome无法代理问题"><a href="#1-Chrome无法代理问题" class="headerlink" title="1. Chrome无法代理问题"></a>1. Chrome无法代理问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">google-chrome --proxy-server:socks5://127.0.0.1:1080</div></pre></td></tr></table></figure>
-<h2 id="2-UTC-时间问题"><a href="#2-UTC-时间问题" class="headerlink" title="2. UTC 时间问题"></a>2. UTC 时间问题</h2><p>安装Ubuntu和Win双系统后，widows认为BIOS时间是本地时间，Ubuntu认为BIOS时间是UTC时间，这样从Ubuntu重启到ubuntu会发现时间相差8小时，Ubuntu会经常与NTP服务器时间进行同步，但Windows不会。</p>
-<p>有两种方法可以解决问题，一是修改Ubuntu时间为本地时间，二是修改Windows时间为UTC时间。</p>
-<p>我采取的是第一种方案：</p>
-<p>以前的方法是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">修改文件 /etc/default/rcS 将UTC=yes改成UTC=no</div></pre></td></tr></table></figure>
-<p>在Ubuntu 16.04使用systemd启动之后，时间也改成了由timedatectl来管理</p>
-<p>更改方法为</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> timedatectl set-local-rtc 1 --adjust-system-clock</div></pre></td></tr></table></figure>
-<p>重启即可</p>
-<h2 id="3-安装软件依赖问题"><a href="#3-安装软件依赖问题" class="headerlink" title="3.安装软件依赖问题"></a>3.安装软件依赖问题</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install -f</div></pre></td></tr></table></figure>
-<h2 id="4-Interesting"><a href="#4-Interesting" class="headerlink" title="4. Interesting"></a>4. Interesting</h2><h3 id="4-1-Matrix"><a href="#4-1-Matrix" class="headerlink" title="4.1 Matrix"></a>4.1 Matrix</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install cmatrix</div></pre></td></tr></table></figure>
-<p>安装后 F11 全屏终端，执行 cmatrix -b</p>
-<p>更多选项执行 cmatrix -h </p>
-<h3 id="4-2-Train"><a href="#4-2-Train" class="headerlink" title="4.2 Train"></a>4.2 Train</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt install sl</div></pre></td></tr></table></figure>
-<p>安装后执行命令 sl 。会有小火车穿过</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
-
+  </div>
 
 
           </div>
@@ -14303,6 +12846,10 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -14563,6 +13110,10 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
