@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Video," />
+  <meta name="keywords" content="ARTS," />
 
 
 
@@ -92,17 +92,17 @@
 
 
 
-<meta name="description" content="h.264 转 h.2651$ ffmpeg -i source [H264video] -i -c:v libx265 [outputVideo] e.g. 1$ ffmpeg -i billions.s01e02.1080p.bluray.x264.mkv -c:v libx265 billions.s01e02.1080p.bluray.x265.mkv 添加字幕1$ ffmpeg -i s">
-<meta name="keywords" content="Video">
+<meta name="description" content="每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）  1.AlgorithmValid ParenthesesGiven a string containing just the characters &amp;#39;(&amp;">
+<meta name="keywords" content="ARTS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ffmpeg简单使用(1)-转码、添加字幕">
-<meta property="og:url" content="http://yoursite.com/2019/04/30/ffmpeg简单使用-1/index.html">
+<meta property="og:title" content="ARTS-week-06">
+<meta property="og:url" content="http://yoursite.com/2019/04/30/ARTS-week-06/index.html">
 <meta property="og:site_name" content="Valar Morghulis">
-<meta property="og:description" content="h.264 转 h.2651$ ffmpeg -i source [H264video] -i -c:v libx265 [outputVideo] e.g. 1$ ffmpeg -i billions.s01e02.1080p.bluray.x264.mkv -c:v libx265 billions.s01e02.1080p.bluray.x265.mkv 添加字幕1$ ffmpeg -i s">
-<meta property="og:updated_time" content="2019-04-30T09:28:08.580Z">
+<meta property="og:description" content="每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）  1.AlgorithmValid ParenthesesGiven a string containing just the characters &amp;#39;(&amp;">
+<meta property="og:updated_time" content="2019-04-30T09:37:49.662Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ffmpeg简单使用(1)-转码、添加字幕">
-<meta name="twitter:description" content="h.264 转 h.2651$ ffmpeg -i source [H264video] -i -c:v libx265 [outputVideo] e.g. 1$ ffmpeg -i billions.s01e02.1080p.bluray.x264.mkv -c:v libx265 billions.s01e02.1080p.bluray.x265.mkv 添加字幕1$ ffmpeg -i s">
+<meta name="twitter:title" content="ARTS-week-06">
+<meta name="twitter:description" content="每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）  1.AlgorithmValid ParenthesesGiven a string containing just the characters &amp;#39;(&amp;">
 
 
 
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/30/ffmpeg简单使用-1/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/04/30/ARTS-week-06/"/>
 
 
 
 
 
-  <title>ffmpeg简单使用(1)-转码、添加字幕 | Valar Morghulis</title>
+  <title>ARTS-week-06 | Valar Morghulis</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -293,7 +293,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/ffmpeg简单使用-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/30/ARTS-week-06/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小明">
@@ -310,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ffmpeg简单使用(1)-转码、添加字幕</h1>
+          <h1 class="post-title" itemprop="name headline">ARTS-week-06</h1>
         
 
         <div class="post-meta">
@@ -322,7 +322,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T17:17:12+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-30T17:37:08+08:00">
                 2019-04-30
               </time>
             
@@ -345,8 +345,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Multimedia/" itemprop="url" rel="index">
-                    <span itemprop="name">Multimedia</span>
+                  <a href="/categories/ARTS/" itemprop="url" rel="index">
+                    <span itemprop="name">ARTS</span>
                   </a>
                 </span>
 
@@ -387,16 +387,43 @@
       
 
       
-        <h2 id="h-264-转-h-265"><a href="#h-264-转-h-265" class="headerlink" title="h.264 转 h.265"></a>h.264 转 h.265</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ffmpeg -i <span class="built_in">source</span> [H264video] -i -c:v libx265 [outputVideo]</div></pre></td></tr></table></figure>
-<p>e.g.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ffmpeg -i billions.s01e02.1080p.bluray.x264.mkv -c:v libx265 billions.s01e02.1080p.bluray.x265.mkv</div></pre></td></tr></table></figure>
-<h2 id="添加字幕"><a href="#添加字幕" class="headerlink" title="添加字幕"></a>添加字幕</h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ffmpeg -i <span class="built_in">source</span> Video.mkv -i <span class="built_in">source</span> Subtitle.srt -c copy outputVideo.mkv</div></pre></td></tr></table></figure>
-<p>e.g.</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ffmpeg -i billions.s01e01.1080p.bluray.x265.mkv -i Billions.S01E01.Pilot.720p.BluRay.x264.srt -c copy billions.s01e01.1080p.bluray.x265-ch.en.mkv</div></pre></td></tr></table></figure>
-<h2 id="批量处理"><a href="#批量处理" class="headerlink" title="批量处理"></a>批量处理</h2><p>Mac &amp; Linux下可以使用shell批量处理，Win下使用Python批量处理：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">import os</div><div class="line"></div><div class="line">video_format = '.mkv'</div><div class="line">episode_num = 3</div><div class="line">path = ‘C:\Billions.S01.1080p.BluRay.x264\srt'</div><div class="line"></div><div class="line">file_list = os.listdir(path)</div><div class="line"></div><div class="line">video_list = [file for file in file_list if file.endswith(video_format)]</div><div class="line">print(video_list)</div><div class="line"></div><div class="line">for num, video in enumerate(video_list, start=episode_num):</div><div class="line">    # print(num, video)</div><div class="line">    # command = 'ffmpeg -i &#123;0&#125; -i billions.s01e0&#123;1&#125;.srt -c copy billions.s01e0&#123;1&#125;.1080p.bluray.x264-ch.en.mkv'.format(video, num)</div><div class="line">    command = 'ffmpeg -i &#123;0&#125; -c:v libx265 billions.s01e0&#123;1&#125;.1080p.bluray.x265.ch.en.mkv'.format(video, num)</div><div class="line">    os.system(command)</div></pre></td></tr></table></figure>
-<p>转换文件编码格式(GBK -&gt; UTF-8)：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> codecs</div><div class="line"><span class="keyword">import</span> chardet</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">convert</span><span class="params">(file, in_enc=<span class="string">"GBK"</span>, out_enc=<span class="string">"UTF-8"</span>)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    该程序用于将目录下的文件从指定格式转换到指定格式，默认的是GBK转到utf-8</div><div class="line">    :param file:    文件路径</div><div class="line">    :param in_enc:  输入文件格式</div><div class="line">    :param out_enc: 输出文件格式</div><div class="line">    :return:</div><div class="line">    """</div><div class="line">    in_enc = in_enc.upper()</div><div class="line">    out_enc = out_enc.upper()</div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        print(<span class="string">"convert [ "</span> + file.split(<span class="string">'\\'</span>)[<span class="number">-1</span>] + <span class="string">" ].....From "</span> + in_enc + <span class="string">" --&gt; "</span> + out_enc )</div><div class="line">        f = codecs.open(file, <span class="string">'r'</span>, in_enc, errors=<span class="string">'ignore'</span>)</div><div class="line">        new_content = f.read()</div><div class="line">        codecs.open(file, <span class="string">'w'</span>, out_enc).write(new_content)</div><div class="line">    <span class="comment"># print (f.read())</span></div><div class="line">    <span class="keyword">except</span> IOError <span class="keyword">as</span> err:</div><div class="line">        print(<span class="string">"I/O error: &#123;0&#125;"</span>.format(err))</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">list_folders_files</span><span class="params">(path)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    返回 "文件夹" 和 "文件" 名字</div><div class="line"></div><div class="line">    :param path: "文件夹"和"文件"所在的路径</div><div class="line">    :return:  (list_folders, list_files)</div><div class="line">            :list_folders: 文件夹</div><div class="line">            :list_files: 文件</div><div class="line">    """</div><div class="line">    list_folders = []</div><div class="line">    list_files = []</div><div class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> os.listdir(path):</div><div class="line">        file_path = os.path.join(path, item)</div><div class="line">        <span class="keyword">if</span> os.path.isdir(file_path):</div><div class="line">            list_folders.append(item)</div><div class="line">        <span class="keyword">else</span>:</div><div class="line">            list_files.append(item)</div><div class="line">    <span class="keyword">return</span> (list_folders, list_files)</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#将路径下面的所有文件，从原来的格式变为UTF-8的格式</span></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</div><div class="line">    path = <span class="string">r'Z:\影音\剧\Billions.S01.1080p.BluRay.x264-ROVERS[rartv]\亿万1BD-DEMAND'</span></div><div class="line">    (list_folders, list_files) = list_folders_files(path)</div><div class="line"></div><div class="line">    print(<span class="string">"Path: "</span> + path)</div><div class="line">    <span class="keyword">for</span> file_name <span class="keyword">in</span> list_files:</div><div class="line">        file_path = os.path.join(path, file_name)</div><div class="line">        <span class="comment"># filePath = path + '\\' + fileName</span></div><div class="line">        <span class="keyword">with</span> open(file_path, <span class="string">"rb"</span>) <span class="keyword">as</span> f:</div><div class="line">            data = f.read()</div><div class="line">            encoding_type = chardet.detect(data)[<span class="string">'encoding'</span>]</div><div class="line">            convert(file_path, encoding_type, <span class="string">'UTF-8'</span>) <span class="comment"># GB18030</span></div></pre></td></tr></table></figure>
+        <blockquote>
+<p>每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）</p>
+</blockquote>
+<h2 id="1-Algorithm"><a href="#1-Algorithm" class="headerlink" title="1.Algorithm"></a>1.Algorithm</h2><h3 id="Valid-Parentheses"><a href="#Valid-Parentheses" class="headerlink" title="Valid Parentheses"></a>Valid Parentheses</h3><p>Given a string containing just the characters <code>&#39;(&#39;</code>, <code>&#39;)&#39;</code>, <code>&#39;{&#39;</code>, <code>&#39;}&#39;</code>, <code>&#39;[&#39;</code> and <code>&#39;]&#39;</code>, determine if the input string is valid.</p>
+<p>An input string is valid if:</p>
+<ol>
+<li>Open brackets must be closed by the same type of brackets.</li>
+<li>Open brackets must be closed in the correct order.</li>
+</ol>
+<p>Note that an empty string is also considered valid.</p>
+<p><strong>Example 1:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;()&quot;</div><div class="line">Output: true</div></pre></td></tr></table></figure>
+<p><strong>Example 2:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;()[]&#123;&#125;&quot;</div><div class="line">Output: true</div></pre></td></tr></table></figure>
+<p><strong>Example 3:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;(]&quot;</div><div class="line">Output: false</div></pre></td></tr></table></figure>
+<p><strong>Example 4:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;([)]&quot;</div><div class="line">Output: false</div></pre></td></tr></table></figure>
+<p><strong>Example 5:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Input: &quot;&#123;[]&#125;&quot;</div><div class="line">Output: true</div></pre></td></tr></table></figure>
+<p><strong>Code:</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">isValid</span><span class="params">(self, s)</span>:</span></div><div class="line">        <span class="string">"""</span></div><div class="line">        :type s: str</div><div class="line">        :rtype: bool</div><div class="line">        """</div><div class="line"></div><div class="line">        mapping = &#123;</div><div class="line">            <span class="string">'('</span>: <span class="string">')'</span>,</div><div class="line">            <span class="string">'['</span>: <span class="string">']'</span>,</div><div class="line">            <span class="string">'&#123;'</span>: <span class="string">'&#125;'</span></div><div class="line">        &#125;</div><div class="line">        stack = []</div><div class="line">        <span class="keyword">for</span> c <span class="keyword">in</span> s:</div><div class="line">            <span class="keyword">if</span> c <span class="keyword">in</span> mapping:</div><div class="line">                stack.append(c)</div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                <span class="keyword">if</span> <span class="keyword">not</span> stack <span class="keyword">or</span> mapping[stack.pop()] != c:</div><div class="line">                    <span class="keyword">return</span> <span class="keyword">False</span></div><div class="line">        <span class="keyword">return</span> <span class="keyword">False</span> <span class="keyword">if</span> stack <span class="keyword">else</span> <span class="keyword">True</span></div></pre></td></tr></table></figure>
+<h2 id="2-Review"><a href="#2-Review" class="headerlink" title="2.Review"></a>2.Review</h2><blockquote>
+<p>可以翻译，锻炼自己的阅读和英语能力。</p>
+<p>英文文章可以去自己想要学习的技术官网获取，或者自己喜欢的公司 blog</p>
+</blockquote>
+<h3 id="An-Introduction-to-Big-Data-Concepts-and-Terminology"><a href="#An-Introduction-to-Big-Data-Concepts-and-Terminology" class="headerlink" title="An Introduction to Big Data Concepts and Terminology"></a>An Introduction to Big Data Concepts and Terminology</h3><p>系统概述了大数据行业及解释了相关术语</p>
+<p><a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-big-data-concepts-and-terminology" target="_blank" rel="external">https://www.digitalocean.com/community/tutorials/an-introduction-to-big-data-concepts-and-terminology</a></p>
+<h2 id="3-Tip"><a href="#3-Tip" class="headerlink" title="3.Tip"></a>3.Tip</h2><blockquote>
+<p>生活技巧，学习技巧、工具</p>
+</blockquote>
+<h3 id="如何让Markdown另起一页"><a href="#如何让Markdown另起一页" class="headerlink" title="如何让Markdown另起一页"></a>如何让Markdown另起一页</h3><ul>
+<li><p>Markdown支持HTML语法</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"page-break-after: always;"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="4-Share"><a href="#4-Share" class="headerlink" title="4.Share"></a>4.Share</h2><h3 id="ffmpeg简单使用-1-转码、添加字幕"><a href="#ffmpeg简单使用-1-转码、添加字幕" class="headerlink" title="ffmpeg简单使用(1)-转码、添加字幕"></a>ffmpeg简单使用(1)-转码、添加字幕</h3><p><a href="https://paranoid-kid.github.io/2019/04/30/ffmpeg%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-1/" target="_blank" rel="external">https://paranoid-kid.github.io/2019/04/30/ffmpeg%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8-1/</a></p>
 
       
     </div>
@@ -431,7 +458,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Video/" rel="tag"># Video</a>
+            <a href="/tags/ARTS/" rel="tag"># ARTS</a>
           
         </div>
       
@@ -444,8 +471,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/30/ARTS-Week-05/" rel="next" title="ARTS-Week-05">
-                <i class="fa fa-chevron-left"></i> ARTS-Week-05
+              <a href="/2019/04/30/ffmpeg简单使用-1/" rel="next" title="ffmpeg简单使用(1)-转码、添加字幕">
+                <i class="fa fa-chevron-left"></i> ffmpeg简单使用(1)-转码、添加字幕
               </a>
             
           </div>
@@ -453,10 +480,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/30/ARTS-week-06/" rel="prev" title="ARTS-week-06">
-                ARTS-week-06 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -630,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#h-264-转-h-265"><span class="nav-text">h.264 转 h.265</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加字幕"><span class="nav-text">添加字幕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批量处理"><span class="nav-text">批量处理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Algorithm"><span class="nav-text">1.Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Valid-Parentheses"><span class="nav-text">Valid Parentheses</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Review"><span class="nav-text">2.Review</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#An-Introduction-to-Big-Data-Concepts-and-Terminology"><span class="nav-text">An Introduction to Big Data Concepts and Terminology</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Tip"><span class="nav-text">3.Tip</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何让Markdown另起一页"><span class="nav-text">如何让Markdown另起一页</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Share"><span class="nav-text">4.Share</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ffmpeg简单使用-1-转码、添加字幕"><span class="nav-text">ffmpeg简单使用(1)-转码、添加字幕</span></a></li></ol></li></ol></div>
             
 
           </div>
